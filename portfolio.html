@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+        }
+
+        /* Buttons */
+        .button {
+            background-color: #3b63ff;
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 14px 22px;
+            border-radius: 6px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #2747d9;
+            transform: translateY(-3px);
+        }
+
+        /* Icons */
+        .fa {
+            padding: 18px;
+            font-size: 22px;
+            width: 22px;
+            text-align: center;
+            text-decoration: none;
+            margin: 8px;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .fa:hover {
+            transform: scale(1.1);
+        }
+
+        .fa-linkedin { background: #007bb5; }
+        .fa-instagram { background: #125688; }
+        .fa-google { background: #dd4b39; }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Hey! I am Sanjay Thandeeswaran</h1>
+    <p>
+        I am interested in developing applications, games, and websites,
+        and I enjoy learning new technologies.
+    </p>
+
+    <!-- Navigation -->
+    <div style="margin-top: 25px;">
+        <a href="about me.html"><button class="button">About Me</button></a>
+        <a href="education.html"><button class="button">Education</button></a>
+        <a href="projects.html"><button class="button">Projects</button></a>
+    </div>
+
+    <!-- Contact -->
+    <div style="margin-top: 30px;">
+        <p><strong>Contact me:</strong></p>
+
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a class="fa fa-google" onclick="showEmail()"></a>
+
+        <span id="email" style="display:none; margin-left:10px;">
+            sanjay@gmail.com
+        </span>
+    </div>
+
+</div>
+
+<script>
+function showEmail() {
+    document.getElementById("email").style.display = "inline";
+}
+</script>
+
+</body>
+</html>
